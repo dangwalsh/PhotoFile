@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B54F565117524AD200AC8988 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B54F565017524AD200AC8988 /* check@2x.png */; };
 		B57C10831751685B005A3635 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57C10821751685B005A3635 /* UIKit.framework */; };
 		B57C10851751685B005A3635 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57C10841751685B005A3635 /* Foundation.framework */; };
 		B57C10871751685B005A3635 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57C10861751685B005A3635 /* CoreGraphics.framework */; };
@@ -28,10 +29,10 @@
 		B57C10BC17516EE9005A3635 /* AlbumPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C10BB17516EE9005A3635 /* AlbumPhoto.m */; };
 		B57C10BE17516FE3005A3635 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57C10BD17516FE3005A3635 /* AssetsLibrary.framework */; };
 		B57C10C017516FEA005A3635 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57C10BF17516FE9005A3635 /* QuartzCore.framework */; };
-		B5E9F42717517CF700943DE0 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E9F42617517CF700943DE0 /* check@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B54F565017524AD200AC8988 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
 		B57C107F1751685B005A3635 /* PhotoFile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoFile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57C10821751685B005A3635 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B57C10841751685B005A3635 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,7 +67,6 @@
 		B57C10BB17516EE9005A3635 /* AlbumPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumPhoto.m; sourceTree = "<group>"; };
 		B57C10BD17516FE3005A3635 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B57C10BF17516FE9005A3635 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		B5E9F42617517CF700943DE0 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "check@2x.png"; path = "../../../Projects/PanTable/PanTable/check@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +146,7 @@
 		B57C10891751685B005A3635 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B5E9F42617517CF700943DE0 /* check@2x.png */,
+				B54F565017524AD200AC8988 /* check@2x.png */,
 				B57C108A1751685B005A3635 /* PhotoFile-Info.plist */,
 				B57C108B1751685B005A3635 /* InfoPlist.strings */,
 				B57C108E1751685B005A3635 /* main.m */,
@@ -214,7 +214,7 @@
 				B57C10971751685B005A3635 /* Default@2x.png in Resources */,
 				B57C10991751685B005A3635 /* Default-568h@2x.png in Resources */,
 				B57C109C1751685B005A3635 /* MainStoryboard.storyboard in Resources */,
-				B5E9F42717517CF700943DE0 /* check@2x.png in Resources */,
+				B54F565117524AD200AC8988 /* check@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
