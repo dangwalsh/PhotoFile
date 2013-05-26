@@ -17,7 +17,18 @@
 		B57C10971751685B005A3635 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B57C10961751685B005A3635 /* Default@2x.png */; };
 		B57C10991751685B005A3635 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B57C10981751685B005A3635 /* Default-568h@2x.png */; };
 		B57C109C1751685B005A3635 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57C109A1751685B005A3635 /* MainStoryboard.storyboard */; };
-		B57C109F1751685B005A3635 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C109E1751685B005A3635 /* ViewController.m */; };
+		B57C109F1751685B005A3635 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C109E1751685B005A3635 /* RootViewController.m */; };
+		B57C10A717516A3B005A3635 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C10A617516A3B005A3635 /* PhotoViewController.m */; };
+		B57C10AA17516A51005A3635 /* CloudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C10A917516A51005A3635 /* CloudViewController.m */; };
+		B57C10AD17516A5F005A3635 /* SizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C10AC17516A5F005A3635 /* SizeViewController.m */; };
+		B57C10B017516DC1005A3635 /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C10AF17516DC1005A3635 /* NavController.m */; };
+		B57C10B317516E0E005A3635 /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C10B217516E0D005A3635 /* LibraryViewController.m */; };
+		B57C10B617516E51005A3635 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C10B517516E51005A3635 /* AlbumViewController.m */; };
+		B57C10B917516ED0005A3635 /* AlbumPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C10B817516ED0005A3635 /* AlbumPhotoCell.m */; };
+		B57C10BC17516EE9005A3635 /* AlbumPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C10BB17516EE9005A3635 /* AlbumPhoto.m */; };
+		B57C10BE17516FE3005A3635 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57C10BD17516FE3005A3635 /* AssetsLibrary.framework */; };
+		B57C10C017516FEA005A3635 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57C10BF17516FE9005A3635 /* QuartzCore.framework */; };
+		B5E9F42717517CF700943DE0 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E9F42617517CF700943DE0 /* check@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +46,27 @@
 		B57C10961751685B005A3635 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B57C10981751685B005A3635 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B57C109B1751685B005A3635 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		B57C109D1751685B005A3635 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B57C109E1751685B005A3635 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B57C109D1751685B005A3635 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		B57C109E1751685B005A3635 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		B57C10A517516A3B005A3635 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		B57C10A617516A3B005A3635 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		B57C10A817516A51005A3635 /* CloudViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudViewController.h; sourceTree = "<group>"; };
+		B57C10A917516A51005A3635 /* CloudViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudViewController.m; sourceTree = "<group>"; };
+		B57C10AB17516A5E005A3635 /* SizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeViewController.h; sourceTree = "<group>"; };
+		B57C10AC17516A5F005A3635 /* SizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeViewController.m; sourceTree = "<group>"; };
+		B57C10AE17516DC1005A3635 /* NavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavController.h; sourceTree = "<group>"; };
+		B57C10AF17516DC1005A3635 /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
+		B57C10B117516E0D005A3635 /* LibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryViewController.h; sourceTree = "<group>"; };
+		B57C10B217516E0D005A3635 /* LibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryViewController.m; sourceTree = "<group>"; };
+		B57C10B417516E51005A3635 /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
+		B57C10B517516E51005A3635 /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
+		B57C10B717516ED0005A3635 /* AlbumPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumPhotoCell.h; sourceTree = "<group>"; };
+		B57C10B817516ED0005A3635 /* AlbumPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumPhotoCell.m; sourceTree = "<group>"; };
+		B57C10BA17516EE9005A3635 /* AlbumPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumPhoto.h; sourceTree = "<group>"; };
+		B57C10BB17516EE9005A3635 /* AlbumPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumPhoto.m; sourceTree = "<group>"; };
+		B57C10BD17516FE3005A3635 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		B57C10BF17516FE9005A3635 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B5E9F42617517CF700943DE0 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "check@2x.png"; path = "../../../Projects/PanTable/PanTable/check@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57C10C017516FEA005A3635 /* QuartzCore.framework in Frameworks */,
+				B57C10BE17516FE3005A3635 /* AssetsLibrary.framework in Frameworks */,
 				B57C10831751685B005A3635 /* UIKit.framework in Frameworks */,
 				B57C10851751685B005A3635 /* Foundation.framework in Frameworks */,
 				B57C10871751685B005A3635 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +105,8 @@
 		B57C10811751685B005A3635 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B57C10BF17516FE9005A3635 /* QuartzCore.framework */,
+				B57C10BD17516FE3005A3635 /* AssetsLibrary.framework */,
 				B57C10821751685B005A3635 /* UIKit.framework */,
 				B57C10841751685B005A3635 /* Foundation.framework */,
 				B57C10861751685B005A3635 /* CoreGraphics.framework */,
@@ -83,11 +117,27 @@
 		B57C10881751685B005A3635 /* PhotoFile */ = {
 			isa = PBXGroup;
 			children = (
+				B57C109A1751685B005A3635 /* MainStoryboard.storyboard */,
 				B57C10911751685B005A3635 /* AppDelegate.h */,
 				B57C10921751685B005A3635 /* AppDelegate.m */,
-				B57C109A1751685B005A3635 /* MainStoryboard.storyboard */,
-				B57C109D1751685B005A3635 /* ViewController.h */,
-				B57C109E1751685B005A3635 /* ViewController.m */,
+				B57C109D1751685B005A3635 /* RootViewController.h */,
+				B57C109E1751685B005A3635 /* RootViewController.m */,
+				B57C10A517516A3B005A3635 /* PhotoViewController.h */,
+				B57C10A617516A3B005A3635 /* PhotoViewController.m */,
+				B57C10A817516A51005A3635 /* CloudViewController.h */,
+				B57C10A917516A51005A3635 /* CloudViewController.m */,
+				B57C10AB17516A5E005A3635 /* SizeViewController.h */,
+				B57C10AC17516A5F005A3635 /* SizeViewController.m */,
+				B57C10AE17516DC1005A3635 /* NavController.h */,
+				B57C10AF17516DC1005A3635 /* NavController.m */,
+				B57C10B117516E0D005A3635 /* LibraryViewController.h */,
+				B57C10B217516E0D005A3635 /* LibraryViewController.m */,
+				B57C10B417516E51005A3635 /* AlbumViewController.h */,
+				B57C10B517516E51005A3635 /* AlbumViewController.m */,
+				B57C10B717516ED0005A3635 /* AlbumPhotoCell.h */,
+				B57C10B817516ED0005A3635 /* AlbumPhotoCell.m */,
+				B57C10BA17516EE9005A3635 /* AlbumPhoto.h */,
+				B57C10BB17516EE9005A3635 /* AlbumPhoto.m */,
 				B57C10891751685B005A3635 /* Supporting Files */,
 			);
 			path = PhotoFile;
@@ -96,6 +146,7 @@
 		B57C10891751685B005A3635 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B5E9F42617517CF700943DE0 /* check@2x.png */,
 				B57C108A1751685B005A3635 /* PhotoFile-Info.plist */,
 				B57C108B1751685B005A3635 /* InfoPlist.strings */,
 				B57C108E1751685B005A3635 /* main.m */,
@@ -163,6 +214,7 @@
 				B57C10971751685B005A3635 /* Default@2x.png in Resources */,
 				B57C10991751685B005A3635 /* Default-568h@2x.png in Resources */,
 				B57C109C1751685B005A3635 /* MainStoryboard.storyboard in Resources */,
+				B5E9F42717517CF700943DE0 /* check@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +227,15 @@
 			files = (
 				B57C108F1751685B005A3635 /* main.m in Sources */,
 				B57C10931751685B005A3635 /* AppDelegate.m in Sources */,
-				B57C109F1751685B005A3635 /* ViewController.m in Sources */,
+				B57C109F1751685B005A3635 /* RootViewController.m in Sources */,
+				B57C10A717516A3B005A3635 /* PhotoViewController.m in Sources */,
+				B57C10AA17516A51005A3635 /* CloudViewController.m in Sources */,
+				B57C10AD17516A5F005A3635 /* SizeViewController.m in Sources */,
+				B57C10B017516DC1005A3635 /* NavController.m in Sources */,
+				B57C10B317516E0E005A3635 /* LibraryViewController.m in Sources */,
+				B57C10B617516E51005A3635 /* AlbumViewController.m in Sources */,
+				B57C10B917516ED0005A3635 /* AlbumPhotoCell.m in Sources */,
+				B57C10BC17516EE9005A3635 /* AlbumPhoto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +358,7 @@
 				B57C10A41751685B005A3635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

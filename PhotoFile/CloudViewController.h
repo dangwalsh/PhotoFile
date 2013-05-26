@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CloudViewController.h
 //  PhotoFile
 //
 //  Created by Daniel Walsh on 5/25/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CloudViewController : UIViewController
 
 @end
