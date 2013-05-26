@@ -12,7 +12,7 @@
 
 @interface LibraryViewController () {
     ALAssetsLibrary *_library;
-    NSMutableArray *_objects;
+    NSMutableArray *_groups;
 }
 @end
 
@@ -22,10 +22,10 @@
 {
     void (^assetGroupEnumerator)(ALAssetsGroup *, BOOL *) =  ^(ALAssetsGroup *group, BOOL *stop) {
         if(group) {
-            if (!_objects) {
-                _objects = [[NSMutableArray alloc] init];
+            if (!_groups) {
+                _groups = [[NSMutableArray alloc] init];
             }
-            [_objects insertObject:group atIndex:0];
+            [_groups insertObject:group atIndex:0];
             NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
             [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
@@ -62,14 +62,14 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return _objects.count;
+    return _groups.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    ALAssetsGroup *object = _objects[indexPath.row];
+    ALAssetsGroup *object = _groups[indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"%@",[object valueForProperty:ALAssetsGroupPropertyName]];
     return cell;
 }
@@ -118,7 +118,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        ALAssetsGroup *object = _objects[indexPath.row];
+        ALAssetsGroup *object = _groups[indexPath.row];
         self.albumViewController.albumItem = object;
     }
 }
@@ -127,7 +127,7 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        ALAssetsGroup *object = _objects[indexPath.row];
+        ALAssetsGroup *object = _groups[indexPath.row];
         [[segue destinationViewController] setAlbumItem:object];
     }
 }

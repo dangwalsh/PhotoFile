@@ -12,8 +12,8 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 
 @interface AlbumViewController () {
-    NSMutableArray *assets;
-    ALAssetsLibrary *library;
+    NSMutableArray *_assets;
+    ALAssetsLibrary *_library;
 }
 
 @end
@@ -22,15 +22,15 @@
 
 - (void)configureView
 {
-    assets = [[NSMutableArray alloc]init];
-    library = [[ALAssetsLibrary alloc]init];
+    _assets = [[NSMutableArray alloc]init];
+    _library = [[ALAssetsLibrary alloc]init];
     
     void (^assetEnumerator)(ALAsset *, NSUInteger, BOOL *) = ^(ALAsset *result, NSUInteger index, BOOL *stop) {
         if(result) {
             AlbumPhoto *aPhoto = [[AlbumPhoto alloc]init];
             aPhoto.thumbnail = [UIImage imageWithCGImage:[result thumbnail]];
             aPhoto.largeImage = [UIImage imageWithCGImage:[[result defaultRepresentation] fullScreenImage]];
-            [assets addObject:aPhoto];
+            [_assets addObject:aPhoto];
         } else {
             [self.collectionView reloadData];
         }
@@ -42,7 +42,7 @@
         }
     };
     
-    [library enumerateGroupsWithTypes:ALAssetsGroupAll
+    [_library enumerateGroupsWithTypes:ALAssetsGroupAll
                            usingBlock:assetGroupEnumerator
                          failureBlock: ^(NSError *error) { NSLog(@"Failure"); }
      ];
@@ -65,7 +65,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section
 {
-    return [assets count];
+    return [_assets count];
 }
 
 - (NSInteger)numberOfSectionsInCollectionView: (UICollectionView *)collectionView
@@ -76,7 +76,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     AlbumPhotoCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"PhotoCell" forIndexPath:indexPath];
-    cell.photo = [assets objectAtIndex:indexPath.item];
+    cell.photo = [_assets objectAtIndex:indexPath.item];
     if (cell.selected) {
         cell.checkView.hidden = NO;
     }
